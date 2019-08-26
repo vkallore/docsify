@@ -9,7 +9,15 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/buble.css" />
+    <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/buble.css" /> -->
+    <!-- Theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"
+    />
+
+    <!-- Custom theme stylesheet -->
+    <link rel="stylesheet" href="theme-custom.css" />
   </head>
   <body>
     <nav>
@@ -41,10 +49,34 @@
         // _404.md is the custom 404 page
         notFoundPage: true,
         // Show only cover, link to docs handled from _coverpage.md
-        onlyCover: true
+        onlyCover: true,
+
+        // Search related starts
+        search: {
+          maxAge: 86400000, // Expiration time, the default one day
+          paths: ["auto"], // or 'auto'
+          placeholder: "Search here",
+
+          noData: "No Results!",
+
+          // Headline depth, 1 - 6
+          depth: 6,
+
+          hideOtherSidebarContent: false // whether or not to hide other sidebar content
+        },
+        // Search related ends
+        // Themable config starts
+        themeable: {
+          responsiveTables: true // default
+        }
+        // Themable config ends
       };
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-    <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
+    <script src="//unpkg.com/docsify-themeable"></script>
+    <!-- Search Markdown content -->
+    <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+    <!-- PHP Syntax Highliter -->
+    <script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
   </body>
 </html>

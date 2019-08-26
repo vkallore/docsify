@@ -1,6 +1,8 @@
 # Headline
 
-> An awesome project.
+:heart:
+
+> An awesome project. :smile:
 
 # docsify
 
@@ -49,15 +51,21 @@ Sub docs 2 :)
 </div>
 ```
 
-**PHP** <sub><sup>_(Not Supported)_</sup></sub>
+**PHP**
 
-```
+```php
 <?php
     echo $test;
 ?>
 ```
 
 # Execute Code!
+
+The following code is executed already!! Check your console.
+
+```javascript
+<script>console.log(2333)</script>
+```
 
 <script>
   console.log(2333)
