@@ -78,5 +78,10 @@
     <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
     <!-- PHP Syntax Highliter -->
     <script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
+    <script>
+      if (typeof navigator.serviceWorker !== "undefined") {
+        navigator.serviceWorker.register("serviceworker.js");
+      }
+    </script>
   </body>
 </html>
