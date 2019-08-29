@@ -5,3 +5,4 @@
 ## Cover Page Subtitle
 
 [Docs](home)
+[Admin Docs](admin/)

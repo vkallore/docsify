@@ -3,17 +3,5 @@
   "scripts": {
     "start": "docsify start .",
     "deploy": "now -p"
-  },
-  "files": [
-    "docs"
-  ],
-  "docsify": {
-    "config": {
-      "basePath": "http://localhost:4000/",
-      "loadSidebar": true,
-      "loadNavbar": true,
-      "coverpage": true,
-      "name": "docsify"
-    }
   }
 }
